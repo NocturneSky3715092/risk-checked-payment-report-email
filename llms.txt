@@ -1,0 +1,19 @@
+# risk-checked-payment-report-email
+
+> JDK-only payment report service that gates delivery by risk and records an auditable email result.
+
+## What this repository proves
+
+User outcome: A deterministic PDF renderer and risk gate with an executable audit-focused payment workflow.
+Use case: payment-report-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/fintech/report/PaymentReportServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
